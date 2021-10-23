@@ -1,0 +1,12 @@
+D:\SMU\5510-Software\Assignment1_C#\MCDA5510_Assignments\Assignment1\Assignment1\bin\Debug\net5.0\Assignment1.deps.json
+D:\SMU\5510-Software\Assignment1_C#\MCDA5510_Assignments\Assignment1\Assignment1\bin\Debug\net5.0\Assignment1.dll
+D:\SMU\5510-Software\Assignment1_C#\MCDA5510_Assignments\Assignment1\Assignment1\bin\Debug\net5.0\ref\Assignment1.dll
+D:\SMU\5510-Software\Assignment1_C#\MCDA5510_Assignments\Assignment1\Assignment1\bin\Debug\net5.0\Assignment1.pdb
+D:\SMU\5510-Software\Assignment1_C#\MCDA5510_Assignments\Assignment1\Assignment1\obj\Debug\net5.0\Assignment1.GeneratedMSBuildEditorConfig.editorconfig
+D:\SMU\5510-Software\Assignment1_C#\MCDA5510_Assignments\Assignment1\Assignment1\obj\Debug\net5.0\Assignment1.AssemblyInfoInputs.cache
+D:\SMU\5510-Software\Assignment1_C#\MCDA5510_Assignments\Assignment1\Assignment1\obj\Debug\net5.0\Assignment1.AssemblyInfo.cs
+D:\SMU\5510-Software\Assignment1_C#\MCDA5510_Assignments\Assignment1\Assignment1\obj\Debug\net5.0\Assignment1.csproj.CoreCompileInputs.cache
+D:\SMU\5510-Software\Assignment1_C#\MCDA5510_Assignments\Assignment1\Assignment1\obj\Debug\net5.0\Assignment1.dll
+D:\SMU\5510-Software\Assignment1_C#\MCDA5510_Assignments\Assignment1\Assignment1\obj\Debug\net5.0\ref\Assignment1.dll
+D:\SMU\5510-Software\Assignment1_C#\MCDA5510_Assignments\Assignment1\Assignment1\obj\Debug\net5.0\Assignment1.pdb
+D:\SMU\5510-Software\Assignment1_C#\MCDA5510_Assignments\Assignment1\Assignment1\obj\Debug\net5.0\Assignment1.csproj.AssemblyReference.cache

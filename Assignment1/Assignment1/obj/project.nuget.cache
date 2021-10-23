@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "0k7cA8sUzUnMNtpPUGfSHWOLEyjuC9dNfFLx6Em39kvqGkdklQOh2lFrtj5G/bTVrJsoZilKi7dug2pruN3NHQ==",
+  "success": true,
+  "projectFilePath": "D:\\SMU\\5510-Software\\Assignment1_C#\\MCDA5510_Assignments\\Assignment1\\Assignment1\\Assignment1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Rohan\\.nuget\\packages\\grpc.core\\2.41.0\\grpc.core.2.41.0.nupkg.sha512",
+    "C:\\Users\\Rohan\\.nuget\\packages\\grpc.core.api\\2.41.0\\grpc.core.api.2.41.0.nupkg.sha512",
+    "C:\\Users\\Rohan\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
+  ],
+  "logs": []
+}
