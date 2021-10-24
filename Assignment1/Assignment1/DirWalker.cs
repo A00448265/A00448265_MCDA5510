@@ -1,6 +1,6 @@
-﻿using System;
+﻿
+using System;
 using System.IO;
-using System.Reflection;
 using System.Text;
 
 namespace Assignment1
@@ -9,10 +9,8 @@ namespace Assignment1
 
     public class DirWalker
     {
-
-        public void walk(String path,String destinationPath, ref int iHeader, ref StringBuilder sOutput, ref int counter, ref int counterworking)
+        public void walk(String path,String destinationPath, ref StringBuilder sOutput, ref int counter, ref int counterworking)
         {
-            
             string[] sFilePath;
             string sPrintPath = String.Empty;
             string[] list = Directory.GetDirectories(path);
@@ -23,7 +21,7 @@ namespace Assignment1
             {
                 if (Directory.Exists(dirpath))
                 {
-                    walk(dirpath, destinationPath, ref iHeader,ref sOutput, ref counter, ref counterworking);
+                    walk(dirpath, destinationPath,ref sOutput, ref counter, ref counterworking);
                     //Console.WriteLine("Dir:" + dirpath);
                 }
             }
@@ -44,7 +42,7 @@ namespace Assignment1
                 #endregion
 
                 SimpleCSVParser obj = new SimpleCSVParser();
-                obj.parse(filepath, sPrintPath, ref iHeader,ref sOutput, ref counter, ref counterworking);
+                obj.parse(filepath, sPrintPath,ref sOutput, ref counter, ref counterworking);
 
             }
             if (sOutput.Length!=0)

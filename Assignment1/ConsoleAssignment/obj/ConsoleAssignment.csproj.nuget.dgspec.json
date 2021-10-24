@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\SMU\\5510-Software\\Assignment1_C#\\MCDA5510_Assignments\\Assignment1\\ConsoleAssignment\\ConsoleAssignment.csproj": {}
+    "D:\\SMU\\5510-Software\\Git\\A00448265_MCDA5510\\Assignment1\\ConsoleAssignment\\ConsoleAssignment.csproj": {}
   },
   "projects": {
-    "D:\\SMU\\5510-Software\\Assignment1_C#\\MCDA5510_Assignments\\Assignment1\\Assignment1\\Assignment1.csproj": {
+    "D:\\SMU\\5510-Software\\Git\\A00448265_MCDA5510\\Assignment1\\Assignment1\\Assignment1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SMU\\5510-Software\\Assignment1_C#\\MCDA5510_Assignments\\Assignment1\\Assignment1\\Assignment1.csproj",
+        "projectUniqueName": "D:\\SMU\\5510-Software\\Git\\A00448265_MCDA5510\\Assignment1\\Assignment1\\Assignment1.csproj",
         "projectName": "Assignment1",
-        "projectPath": "D:\\SMU\\5510-Software\\Assignment1_C#\\MCDA5510_Assignments\\Assignment1\\Assignment1\\Assignment1.csproj",
+        "projectPath": "D:\\SMU\\5510-Software\\Git\\A00448265_MCDA5510\\Assignment1\\Assignment1\\Assignment1.csproj",
         "packagesPath": "C:\\Users\\Rohan\\.nuget\\packages\\",
-        "outputPath": "D:\\SMU\\5510-Software\\Assignment1_C#\\MCDA5510_Assignments\\Assignment1\\Assignment1\\obj\\",
+        "outputPath": "D:\\SMU\\5510-Software\\Git\\A00448265_MCDA5510\\Assignment1\\Assignment1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rohan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -43,6 +43,10 @@
             "Grpc.Core": {
               "target": "Package",
               "version": "[2.41.0, )"
+            },
+            "log4net": {
+              "target": "Package",
+              "version": "[2.0.12, )"
             }
           },
           "imports": [
@@ -64,14 +68,14 @@
         }
       }
     },
-    "D:\\SMU\\5510-Software\\Assignment1_C#\\MCDA5510_Assignments\\Assignment1\\ConsoleAssignment\\ConsoleAssignment.csproj": {
+    "D:\\SMU\\5510-Software\\Git\\A00448265_MCDA5510\\Assignment1\\ConsoleAssignment\\ConsoleAssignment.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SMU\\5510-Software\\Assignment1_C#\\MCDA5510_Assignments\\Assignment1\\ConsoleAssignment\\ConsoleAssignment.csproj",
+        "projectUniqueName": "D:\\SMU\\5510-Software\\Git\\A00448265_MCDA5510\\Assignment1\\ConsoleAssignment\\ConsoleAssignment.csproj",
         "projectName": "ConsoleAssignment",
-        "projectPath": "D:\\SMU\\5510-Software\\Assignment1_C#\\MCDA5510_Assignments\\Assignment1\\ConsoleAssignment\\ConsoleAssignment.csproj",
+        "projectPath": "D:\\SMU\\5510-Software\\Git\\A00448265_MCDA5510\\Assignment1\\ConsoleAssignment\\ConsoleAssignment.csproj",
         "packagesPath": "C:\\Users\\Rohan\\.nuget\\packages\\",
-        "outputPath": "D:\\SMU\\5510-Software\\Assignment1_C#\\MCDA5510_Assignments\\Assignment1\\ConsoleAssignment\\obj\\",
+        "outputPath": "D:\\SMU\\5510-Software\\Git\\A00448265_MCDA5510\\Assignment1\\ConsoleAssignment\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rohan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -88,8 +92,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\SMU\\5510-Software\\Assignment1_C#\\MCDA5510_Assignments\\Assignment1\\Assignment1\\Assignment1.csproj": {
-                "projectPath": "D:\\SMU\\5510-Software\\Assignment1_C#\\MCDA5510_Assignments\\Assignment1\\Assignment1\\Assignment1.csproj"
+              "D:\\SMU\\5510-Software\\Git\\A00448265_MCDA5510\\Assignment1\\Assignment1\\Assignment1.csproj": {
+                "projectPath": "D:\\SMU\\5510-Software\\Git\\A00448265_MCDA5510\\Assignment1\\Assignment1\\Assignment1.csproj"
               }
             }
           }
@@ -107,6 +111,10 @@
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[5.0.0, )"
+            },
+            "log4net": {
+              "target": "Package",
+              "version": "[2.0.12, )"
             }
           },
           "imports": [

@@ -21,9 +21,11 @@ namespace Assignment1
 
         public static string OpenStream(string path, string pathCSV)
         {
+            Log objLogger = new Log();
+
             if (pathCSV is null)
             {
-                Console.WriteLine("You did not supply a file path.");
+                objLogger.WriteErrorLog("You did not supply a file path.");
                 return null;
             }
 
@@ -42,41 +44,42 @@ namespace Assignment1
                 if (File.Exists(pathCSV))
                     File.Delete(pathCSV);
                 //Create New file
-                File.WriteAllText(pathCSV, "");
+                File.WriteAllText(pathCSV, "First Name, Last Name, Street Number, Street, City, Province, Country, Postal Code, Phone Number, email Address\n");
+                objLogger.WriteInfoLog("Creating file :" + pathCSV);
 
                 return "SUCCESS";
             }
             catch (FileNotFoundException)
             {
-                Console.WriteLine("The file or directory cannot be found.");
+                objLogger.WriteErrorLog("The file or directory cannot be found.");
             }
             catch (DirectoryNotFoundException)
             {
-                Console.WriteLine("The file or directory cannot be found.");
+                objLogger.WriteErrorLog("The file or directory cannot be found.");
             }
             catch (DriveNotFoundException)
             {
-                Console.WriteLine("The drive specified in 'path' is invalid.");
+                objLogger.WriteErrorLog("The drive specified in 'path' is invalid.");
             }
             catch (PathTooLongException)
             {
-                Console.WriteLine("'path' exceeds the maxium supported path length.");
+                objLogger.WriteErrorLog("'path' exceeds the maxium supported path length.");
             }
             catch (UnauthorizedAccessException)
             {
-                Console.WriteLine("You do not have permission to create this file.");
+                objLogger.WriteErrorLog("You do not have permission to create this file.");
             }
             catch (IOException e) when ((e.HResult & 0x0000FFFF) == 32)
             {
-                Console.WriteLine("There is a sharing violation.");
+                objLogger.WriteErrorLog("There is a sharing violation.");
             }
             catch (IOException e) when ((e.HResult & 0x0000FFFF) == 80)
             {
-                Console.WriteLine("The file already exists.");
+                objLogger.WriteErrorLog("The file already exists.");
             }
             catch (IOException e)
             {
-                Console.WriteLine($"An exception occurred:\nError code: " +
+                objLogger.WriteErrorLog($"An exception occurred:\nError code: " +
                                   $"{e.HResult & 0x0000FFFF}\nMessage: {e.Message}");
             }
             return null;

@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "QVHWqWIaWYTl0zHyyE+OCKYQSBPt3A/LEfq/ktUMZq4NH64QcdTd9evxFN6OU36Rth8UceAEIwy/gi6hev/0GQ==",
+  "dgSpecHash": "Yq7Z9BnzvZOguHUrPfSGTu6YPCkQdJp+k3WWZZyZBuyC6T1eQKIEz8tDzg8Dn/XtmokjF30J7ixr1bZghA9qyg==",
   "success": true,
-  "projectFilePath": "D:\\SMU\\5510-Software\\Assignment1_C#\\MCDA5510_Assignments\\Assignment1\\ConsoleAssignment\\ConsoleAssignment.csproj",
+  "projectFilePath": "D:\\SMU\\5510-Software\\Git\\A00448265_MCDA5510\\Assignment1\\ConsoleAssignment\\ConsoleAssignment.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rohan\\.nuget\\packages\\grpc.core\\2.41.0\\grpc.core.2.41.0.nupkg.sha512",
     "C:\\Users\\Rohan\\.nuget\\packages\\grpc.core.api\\2.41.0\\grpc.core.api.2.41.0.nupkg.sha512",
+    "C:\\Users\\Rohan\\.nuget\\packages\\log4net\\2.0.12\\log4net.2.0.12.nupkg.sha512",
     "C:\\Users\\Rohan\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\Rohan\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
     "C:\\Users\\Rohan\\.nuget\\packages\\system.configuration.configurationmanager\\5.0.0\\system.configuration.configurationmanager.5.0.0.nupkg.sha512",

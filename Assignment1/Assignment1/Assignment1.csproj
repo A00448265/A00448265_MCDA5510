@@ -13,5 +13,6 @@
 
   <ItemGroup>
     <PackageReference Include="Grpc.Core" Version="2.41.0" />
+    <PackageReference Include="log4net" Version="2.0.12" />
   </ItemGroup>
 </Project>

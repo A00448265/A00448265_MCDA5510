@@ -9,6 +9,7 @@ namespace ConsoleAssignment
 {
     class Program
     {
+       
         /// <summary>
         /// Main Method to traverse directories, read CSVs and display output in a single csv 
         /// </summary>
@@ -19,15 +20,20 @@ namespace ConsoleAssignment
         {
             int counter = 0;
             int counterworking = 0;
-            int iHeader = 0;
             Assignment1.DirWalker dir = new Assignment1.DirWalker();
             StringBuilder sOutput = new StringBuilder();
             var timer = new Stopwatch();
 
+            Console.WriteLine("Program has started. Please wait..");
+
+            Log objLogger = new Log();
+
             string filePath = ConfigurationManager.AppSettings["filename"].ToString();
+            objLogger.WriteInfoLog("Path to read the sample data :" + filePath);
 
             string DestPath = AppContext.BaseDirectory.Substring(0, AppContext.BaseDirectory.IndexOf("bin")) + "\\Output";
-            
+            objLogger.WriteInfoLog("Path to write the output data :" + DestPath);
+
             string filePathCSV = DestPath + @"\\output.csv";
            // string filePathTXT = sPath + @"\\Output\\output.txt";
 
@@ -44,17 +50,18 @@ namespace ConsoleAssignment
             #region Traverse and read CSV files
 
             timer.Start();
-            dir.walk(filePath, filePathCSV, ref iHeader,ref sOutput, ref counter, ref counterworking);
+            dir.walk(filePath, filePathCSV, ref sOutput, ref counter, ref counterworking);
             timer.Stop();
             TimeSpan timeTaken = timer.Elapsed;
             string timeElapsed = "Time taken: " + timeTaken.ToString(@"m\:ss\.fff");
-            
+
             #endregion
 
             //System.IO.File.Move(filePathTXT, filePathCSV);
+            objLogger.WriteInfoLog("Total execution time – " + timeElapsed + " Total number of valid rows – " + counterworking + " Total number of skipped rows - " + counter);
             File.AppendAllText(filePathCSV, "Total execution time – " + timeElapsed + " Total number of valid rows – " + counterworking + " Total number of skipped rows - " + counter);
 
-            Console.WriteLine("Done. Please check logs and output");
+            Console.WriteLine("Done! Please check logs and output");
             Console.ReadKey();
         }
     }

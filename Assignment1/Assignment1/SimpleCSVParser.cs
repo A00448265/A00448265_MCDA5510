@@ -7,14 +7,20 @@ namespace Assignment1
 {
     public class SimpleCSVParser
     {
-        public void parse(String fileName, String sPrintPath, ref int iHeader, ref StringBuilder sOutput, ref int counter, ref int counterworking)
+        public void parse(String fileName, String sPrintPath, ref StringBuilder sOutput, ref int counter, ref int counterworking)
         {
+            Log objLogger = new Log();   
             StringBuilder sTemp = new StringBuilder();
             int flag = 0;
+            int i = 0;
+            int row = 0;
 
             try
             {
-                int i = 0;
+                string[] Headers = { "First Name", "Last Name", "Street Number", "Street", "City", "Province", "Country", "Postal Code","Phone Number","email Address" };
+
+                //First Name, Last Name, Street Number, Street, City, Province, Country, Postal Code, Phone Number, email Address
+
                 using (TextFieldParser parser = new TextFieldParser(fileName))
                 {
                     parser.TextFieldType = FieldType.Delimited;
@@ -24,6 +30,8 @@ namespace Assignment1
 
                     while (!parser.EndOfData)
                     {
+                        row++;
+
                         #region Add CSV fields to Temp variable
                         //Process row
                         flag = 0;
@@ -31,34 +39,35 @@ namespace Assignment1
                         sTemp = new StringBuilder();
                         string[] fields = parser.ReadFields();
 
-
                         #region Headers
                         if (fields[0] == "First Name")
                         {
-                            if (iHeader == 0)
-                            {
-                                iHeader = 1;
-                                foreach (string field in fields)
-                                {
-                                    sOutput.Append(field + ",");
-                                }
-                                sOutput.Length--;
-                                sOutput.Append("," + sPrintPath + Environment.NewLine);
-                            }
-                            
+                            //if (iHeader == 0)
+                            //{
+                            //    iHeader = 1;
+                            //    foreach (string field in fields)
+                            //    {
+                            //        sOutput.Append(field + ",");
+                            //    }
+                            //    sOutput.Length--;
+                            //    sOutput.Append(Environment.NewLine);
+                            //}
                             continue;
                         }
                         #endregion
-
+                        i = 0;
                         foreach (string field in fields)
                         {
                             if (!String.IsNullOrEmpty(field))
                             {
                                 sTemp.Append(field + ",");
+                                i++;
                             }
                             else
                             {
                                 flag = 1;
+                                objLogger.WriteErrorLog("Skipped row of file name: " + fileName + " and row number " + row +" because of missing column " + Headers[i]);
+                                i++;
                                 break;
                             }
                         }
@@ -80,7 +89,8 @@ namespace Assignment1
             }
             catch (IOException ioe)
             {
-                Console.WriteLine(ioe.StackTrace);
+                objLogger.WriteErrorLog(ioe.Message + ioe.StackTrace);
+                //Console.WriteLine(ioe.StackTrace);
             }
 
         }

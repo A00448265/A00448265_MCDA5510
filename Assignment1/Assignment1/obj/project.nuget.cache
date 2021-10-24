@@ -1,12 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "0k7cA8sUzUnMNtpPUGfSHWOLEyjuC9dNfFLx6Em39kvqGkdklQOh2lFrtj5G/bTVrJsoZilKi7dug2pruN3NHQ==",
+  "dgSpecHash": "8saqhJLPWDGhb4QXF7NeKBet150uGVX8+lVjK06EU9gs+2AxAWjyJIpSG9RebaWOLaUTrM7QDQGz21c8IvTcfg==",
   "success": true,
-  "projectFilePath": "D:\\SMU\\5510-Software\\Assignment1_C#\\MCDA5510_Assignments\\Assignment1\\Assignment1\\Assignment1.csproj",
+  "projectFilePath": "D:\\SMU\\5510-Software\\Git\\A00448265_MCDA5510\\Assignment1\\Assignment1\\Assignment1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rohan\\.nuget\\packages\\grpc.core\\2.41.0\\grpc.core.2.41.0.nupkg.sha512",
     "C:\\Users\\Rohan\\.nuget\\packages\\grpc.core.api\\2.41.0\\grpc.core.api.2.41.0.nupkg.sha512",
-    "C:\\Users\\Rohan\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
+    "C:\\Users\\Rohan\\.nuget\\packages\\log4net\\2.0.12\\log4net.2.0.12.nupkg.sha512",
+    "C:\\Users\\Rohan\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "C:\\Users\\Rohan\\.nuget\\packages\\system.configuration.configurationmanager\\4.5.0\\system.configuration.configurationmanager.4.5.0.nupkg.sha512",
+    "C:\\Users\\Rohan\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\Rohan\\.nuget\\packages\\system.security.accesscontrol\\4.5.0\\system.security.accesscontrol.4.5.0.nupkg.sha512",
+    "C:\\Users\\Rohan\\.nuget\\packages\\system.security.cryptography.protecteddata\\4.5.0\\system.security.cryptography.protecteddata.4.5.0.nupkg.sha512",
+    "C:\\Users\\Rohan\\.nuget\\packages\\system.security.permissions\\4.5.0\\system.security.permissions.4.5.0.nupkg.sha512",
+    "C:\\Users\\Rohan\\.nuget\\packages\\system.security.principal.windows\\4.5.0\\system.security.principal.windows.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }

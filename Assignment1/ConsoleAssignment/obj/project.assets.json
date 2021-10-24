@@ -49,6 +49,18 @@
           "lib/netstandard2.0/Grpc.Core.Api.dll": {}
         }
       },
+      "log4net/2.0.12": {
+        "type": "package",
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/log4net.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/log4net.dll": {}
+        }
+      },
       "Microsoft.NETCore.Platforms/5.0.0": {
         "type": "package",
         "compile": {
@@ -208,7 +220,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "Grpc.Core": "2.41.0"
+          "Grpc.Core": "2.41.0",
+          "log4net": "2.0.12"
         },
         "compile": {
           "bin/placeholder/Assignment1.dll": {}
@@ -265,6 +278,34 @@
         "lib/netstandard2.0/Grpc.Core.Api.dll",
         "lib/netstandard2.0/Grpc.Core.Api.pdb",
         "lib/netstandard2.0/Grpc.Core.Api.xml"
+      ]
+    },
+    "log4net/2.0.12": {
+      "sha512": "9P67BCftJ7KG+B7rNOM1A9KczUwyEDed6zbAddy5Cj/73xVkzi+rEAHeOgUnW5wDqy1JFlY8+oTP0m1PgJ03Tg==",
+      "type": "package",
+      "path": "log4net/2.0.12",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/log4net.dll",
+        "lib/net20/log4net.xml",
+        "lib/net35-client/log4net.dll",
+        "lib/net35-client/log4net.xml",
+        "lib/net35/log4net.dll",
+        "lib/net35/log4net.xml",
+        "lib/net40-client/log4net.dll",
+        "lib/net40-client/log4net.xml",
+        "lib/net40/log4net.dll",
+        "lib/net40/log4net.xml",
+        "lib/net45/log4net.dll",
+        "lib/net45/log4net.xml",
+        "lib/netstandard1.3/log4net.dll",
+        "lib/netstandard1.3/log4net.xml",
+        "lib/netstandard2.0/log4net.dll",
+        "lib/netstandard2.0/log4net.xml",
+        "log4net.2.0.12.nupkg.sha512",
+        "log4net.nuspec",
+        "package-icon.png"
       ]
     },
     "Microsoft.NETCore.Platforms/5.0.0": {
@@ -611,7 +652,8 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "Assignment1 >= 1.0.0",
-      "System.Configuration.ConfigurationManager >= 5.0.0"
+      "System.Configuration.ConfigurationManager >= 5.0.0",
+      "log4net >= 2.0.12"
     ]
   },
   "packageFolders": {
@@ -620,11 +662,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\SMU\\5510-Software\\Assignment1_C#\\MCDA5510_Assignments\\Assignment1\\ConsoleAssignment\\ConsoleAssignment.csproj",
+      "projectUniqueName": "D:\\SMU\\5510-Software\\Git\\A00448265_MCDA5510\\Assignment1\\ConsoleAssignment\\ConsoleAssignment.csproj",
       "projectName": "ConsoleAssignment",
-      "projectPath": "D:\\SMU\\5510-Software\\Assignment1_C#\\MCDA5510_Assignments\\Assignment1\\ConsoleAssignment\\ConsoleAssignment.csproj",
+      "projectPath": "D:\\SMU\\5510-Software\\Git\\A00448265_MCDA5510\\Assignment1\\ConsoleAssignment\\ConsoleAssignment.csproj",
       "packagesPath": "C:\\Users\\Rohan\\.nuget\\packages\\",
-      "outputPath": "D:\\SMU\\5510-Software\\Assignment1_C#\\MCDA5510_Assignments\\Assignment1\\ConsoleAssignment\\obj\\",
+      "outputPath": "D:\\SMU\\5510-Software\\Git\\A00448265_MCDA5510\\Assignment1\\ConsoleAssignment\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Rohan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -641,8 +683,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\SMU\\5510-Software\\Assignment1_C#\\MCDA5510_Assignments\\Assignment1\\Assignment1\\Assignment1.csproj": {
-              "projectPath": "D:\\SMU\\5510-Software\\Assignment1_C#\\MCDA5510_Assignments\\Assignment1\\Assignment1\\Assignment1.csproj"
+            "D:\\SMU\\5510-Software\\Git\\A00448265_MCDA5510\\Assignment1\\Assignment1\\Assignment1.csproj": {
+              "projectPath": "D:\\SMU\\5510-Software\\Git\\A00448265_MCDA5510\\Assignment1\\Assignment1\\Assignment1.csproj"
             }
           }
         }
@@ -660,6 +702,10 @@
           "System.Configuration.ConfigurationManager": {
             "target": "Package",
             "version": "[5.0.0, )"
+          },
+          "log4net": {
+            "target": "Package",
+            "version": "[2.0.12, )"
           }
         },
         "imports": [
