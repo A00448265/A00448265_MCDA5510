@@ -7,6 +7,8 @@ namespace Assignment1
 {
     public class SimpleCSVParser
     {
+        string[] Headers = { "First Name", "Last Name", "Street Number", "Street", "City", "Province", "Country", "Postal Code", "Phone Number", "email Address" };
+
         public void parse(String fileName, String sPrintPath, ref StringBuilder sOutput, ref int counter, ref int counterworking)
         {
             Log objLogger = new Log();   
@@ -17,8 +19,7 @@ namespace Assignment1
 
             try
             {
-                string[] Headers = { "First Name", "Last Name", "Street Number", "Street", "City", "Province", "Country", "Postal Code","Phone Number","email Address" };
-
+                
                 //First Name, Last Name, Street Number, Street, City, Province, Country, Postal Code, Phone Number, email Address
 
                 using (TextFieldParser parser = new TextFieldParser(fileName))
